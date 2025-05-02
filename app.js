@@ -197,7 +197,7 @@ document.addEventListener('DOMContentLoaded', () => {
                  scenarioData.calculated.annualTotals[type] = scenarioData.calculated.annualTotals[type] ?? { __TOTAL__: 0 };
 
                  // Process each rubro defined in global settings
-                 appState.settings.rubros[type].forEach(rubro => {
+                appState.settings.rubros[type].forEach(rubro => {
                      // Ensure data/status structures for the rubro exist in the scenario
                      if (!scenarioData.data[type][rubro]) {
                          scenarioData.data[type][rubro] = { detailOrder: [], detailsData: {} };
